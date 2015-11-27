@@ -1,0 +1,10 @@
+{
+    "name"         : "vassilmladenov-website",
+    "version"      : "1.0.0",
+    "description"  : "Personal website for Vassil Mladenov",
+    "main"         : "server.js",
+    "author"       : "Vassil Mladenov",
+    "dependencies" : {
+        "express"    : "~4.7.2"
+    }
+}

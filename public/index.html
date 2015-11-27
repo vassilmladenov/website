@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="website">
+<head>
+    <!-- load bootstrap and fontawesome via CDN -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/site.css" />
+    <!-- load angular and angular route via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="mainController">
+
+
+    <div class="container">
+        <!-- HEADER AND NAVBAR -->
+        <div class="page-header text-center">
+            <h1>Vassil Mladenov</h1>
+        </div>
+        <nav class="navbar navbar-default" >
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class=" navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#projects"><i class="fa fa-shield"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main">
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div ng-view></div>
+        </div>
+    </div>
+</body>
+</html>
