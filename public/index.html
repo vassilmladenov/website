@@ -2,15 +2,15 @@
 <html ng-app="website">
 <head>
     <!-- load bootstrap and fontawesome via CDN -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/site.css" />
     <!-- load angular and angular route via CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <script src="app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body ng-controller="mainController">
 
@@ -24,9 +24,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class=" navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#projects"><i class="fa fa-shield"></i> Projects</a></li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                    <li ng-class="{active: $route.current.activetab == 'home'}">
+                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li ng-class="{active: $route.current.activetab == 'projects'}">
+                        <a href="#projects"><i class="fa fa-paper-plane"></i> Projects</a>
+                    </li>
+                    <li ng-class="{active: $route.current.activetab == 'contact'}">
+                        <a href="#contact"><i class="fa fa-hashtag"></i> Contact</a>
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>

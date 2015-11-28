@@ -4,26 +4,44 @@
 }
 
 .navbar .navbar-collapse {
+    border-top: none;
     text-align: center;
 }
 
 .navbar-default {
-    background-color: #ffffff;
-    border-color: #ffffff;
+    background-color: transparent;
+    border-color: transparent;
 }
 
-.jumbotron {
-    background-color: #ffffff;
+.nav > li {
+    display: inline-block;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent; 
+    color: #333333
+}
+
+h1 > a {
+    color: #333333
+}
+h1 > a:hover {
+    color: #337ab7
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 940px;
+    width: 800px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
 body, h1 {
     font-family: 'Roboto Mono';
 }
-
-

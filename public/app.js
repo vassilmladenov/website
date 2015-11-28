@@ -9,29 +9,35 @@ website.config(function($routeProvider) {
         // route for the home page
         .when('/', {
             templateUrl : 'views/home.html',
-            controller  : 'mainController'
+            controller  : 'mainController',
+            activetab   : 'home'
         })
 
         // route for the about page
         .when('/projects', {
             templateUrl : 'views/projects.html',
-            controller  : 'projectsController'
+            controller  : 'projectsController',
+            activetab   : 'projects'
         })
 
         // route for the contact page
         .when('/contact', {
             templateUrl : 'views/contact.html',
-            controller  : 'contactController'
+            controller  : 'contactController',
+            activetab   : 'contact'
         });
 });
 
 // create the controller and inject Angular's $scope
-website.controller('mainController', function($scope) {});
-
-website.controller('projectsController', function($scope) {
-    $scope.message = 'Look! I am an about page.';
+website.controller('mainController', function($scope, $route) {
+    $scope.$route = $route;
 });
 
-website.controller('contactController', function($scope) {
-    $scope.message = 'vmladenov [at] icloud [dot] com';
+website.controller('projectsController', function($scope, $route) {
+    $scope.$route = $route;
+});
+
+website.controller('contactController', function($scope, $route) {
+    $scope.$route = $route;
+    $scope.email = 'vmladenov [at] icloud [dot] com';
 });
