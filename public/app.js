@@ -20,6 +20,12 @@ website.config(function($routeProvider) {
             activetab   : 'projects'
         })
 
+        .when('/projects/:row/:col', {
+            templateUrl : 'views/details.html',
+            controller  : 'detailsController',
+            activetab   : undefined
+        })
+
         // route for the contact page
         .when('/contact', {
             templateUrl : 'views/contact.html',
@@ -33,11 +39,22 @@ website.controller('mainController', function($scope, $route) {
     $scope.$route = $route;
 });
 
-website.controller('projectsController', function($scope, $route) {
+website.controller('projectsController', function($scope, $route, $http) {
     $scope.$route = $route;
+    $http.get("assets/projects.json").then(function (result) {
+        $scope.projects = result.data;
+        console.log("projects", result.data)
+    })
 });
 
 website.controller('contactController', function($scope, $route) {
     $scope.$route = $route;
     $scope.email = 'vmladenov [at] icloud [dot] com';
+});
+
+website.controller('detailsController', function($scope, $routeParams, $http) {
+    $http.get("assets/projects.json").then(function (result) {
+        $scope.project = result.data[$routeParams.row][$routeParams.col];
+        console.log("projects", $scope.project)
+    })
 });

@@ -1,0 +1,36 @@
+[
+    [
+        {
+            "title"       : "Arduino LED Music",
+            "abstract"    : "An array of RGB LED lights driven by an Arduino. The lights respond to music through FFT on an electret microphone source or an AirPlay stream from a Raspberry Pi.",
+            "details" : [
+                {
+                    "image"       : "",
+                    "paragraph"   : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                }
+            ]
+        },
+        {
+            "title"       : "MeetU",
+            "abstract"    : "CS 411 (databases) final project.",
+            "details" : [
+                {
+                    "image"       : "",
+                    "paragraph"   : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "title"       : "HyperSnake",
+            "abstract"    : "A four-dimensional version of the classic Snake game. Players interact with the three-dimensional shadow of the wireframe tesseract that contains the game.",
+            "details" : [
+                {
+                    "image"       : "assets/hypersnake.png",
+                    "paragraph"   : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                }
+            ]
+        }
+    ]
+]

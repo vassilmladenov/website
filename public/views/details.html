@@ -1,0 +1,7 @@
+<div class="text-center">
+<h2>{{ project.title }}</h2>
+    <div ng-repeat="pair in project.details" class="text-center">
+        <p>{{ pair.paragraph }}</p>
+        <img ng-show="pair.image" ng-src="{{ pair.image }}" class="img-responsive">
+    </div>
+</div>

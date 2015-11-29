@@ -1,10 +1,7 @@
-<div class="row">
-    <div class="col-sm-6 text-center">
-        <h2>HyperSnake</h2>
-        <p>project text</p>
-    </div>
-    <div class="col-sm-6 text-center">
-        <h2>Arduino LED Music</h2>
-        <p>project text</p>
+<div ng-repeat="(row, projectRow) in projects" class="row">
+    <div ng-repeat="(col, project) in projectRow" class="col-sm-6 text-center">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.abstract }}</p>
+        <a class="btn btn-default" href="#projects/{{row}}/{{col}}" role="button">See more »</a>
     </div>
 </div>
