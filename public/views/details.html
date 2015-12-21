@@ -1,7 +1,9 @@
-<div class="text-center">
-<h2>{{ project.title }}</h2>
-    <div ng-repeat="pair in project.details" class="text-center">
-        <p>{{ pair.paragraph }}</p>
-        <img ng-show="pair.image" ng-src="{{ pair.image }}" class="img-responsive">
+<div>
+    <div class="row">
+    <h2 class="text-center">{{ project.title }}</h2>
+    </div>
+    <div ng-repeat="pair in project.details" class="details-text row">
+        <p ng-if="pair.type === 'paragraph'">{{ pair.content }}</p>
+        <img ng-if="pair.type === 'image'" ng-src="{{ pair.content }}" class="center-block img-responsive">
     </div>
 </div>

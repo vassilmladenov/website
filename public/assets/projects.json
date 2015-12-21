@@ -6,7 +6,11 @@
             "details" : [
                 {
                     "image"       : "",
-                    "paragraph"   : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "paragraph"   : ""
+                },
+                {
+                    "type"        : "paragraph",
+                    "content"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 }
             ]
         },
@@ -27,8 +31,24 @@
             "abstract"    : "A four-dimensional version of the classic Snake game. Players interact with the three-dimensional shadow of the wireframe tesseract that contains the game.",
             "details" : [
                 {
-                    "image"       : "assets/hypersnake.png",
-                    "paragraph"   : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "type"        : "paragraph",
+                    "content"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                },
+                {
+                    "type"        : "image",
+                    "content"     : "assets/hypersnake.png"
+                },
+                {
+                    "type"        : "paragraph",
+                    "content"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                },
+                {
+                    "type"        : "paragraph",
+                    "content"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                },
+                {
+                    "type"        : "paragraph",
+                    "content"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 }
             ]
         }

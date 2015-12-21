@@ -30,9 +30,6 @@
                     <li ng-class="{active: $route.current.activetab == 'projects'}">
                         <a href="#projects"><i class="fa fa-paper-plane"></i> Projects</a>
                     </li>
-                    <li ng-class="{active: $route.current.activetab == 'contact'}">
-                        <a href="#contact"><i class="fa fa-hashtag"></i> Contact</a>
-                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
@@ -43,6 +40,24 @@
             <!-- this is where content will be injected -->
             <div ng-view></div>
         </div>
+
+        
     </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <!-- <div class="row"> -->
+            <h1 class="footer-icons">
+
+                <a href="https://www.facebook.com/vassi.mladenov"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/vmladenov"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.github.com/vassilmladenov"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/vassilmladenov"><i class="fa fa-twitter"></i></a>
+                
+            </h1>
+            <!-- </div> -->
+            <p>I can be reached via email at:</p>
+            <p>{{ email }}</p>
+        </div>
+    </footer>
 </body>
 </html>

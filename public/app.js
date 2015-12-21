@@ -27,16 +27,12 @@ website.config(function($routeProvider) {
         })
 
         // route for the contact page
-        .when('/contact', {
-            templateUrl : 'views/contact.html',
-            controller  : 'contactController',
-            activetab   : 'contact'
-        });
 });
 
 // create the controller and inject Angular's $scope
 website.controller('mainController', function($scope, $route) {
     $scope.$route = $route;
+    $scope.email = 'vmladenov [at] icloud [dot] com';
 });
 
 website.controller('projectsController', function($scope, $route, $http) {
@@ -45,11 +41,6 @@ website.controller('projectsController', function($scope, $route, $http) {
         $scope.projects = result.data;
         console.log("projects", result.data)
     })
-});
-
-website.controller('contactController', function($scope, $route) {
-    $scope.$route = $route;
-    $scope.email = 'vmladenov [at] icloud [dot] com';
 });
 
 website.controller('detailsController', function($scope, $routeParams, $http) {
