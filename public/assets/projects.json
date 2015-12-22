@@ -26,7 +26,7 @@
                 },
                 {
                     "type"        : "paragraph",
-                    "content"     : "On the second floor, there are three main attractions -- two hallways and the Infinity Pool -- and a small spinning cube as a decoration and distraction. The cube uses Unity stencil buffers to show a different shape from each face, and it spins to give users a fixed frame of reference in the second floor. There are two pairs doors on the second floor, each connected by a hallway. The hallway for the pair that are close together is much longer than the apparent distance between the doors, and the hallay between the doors that are far apart is actually a shortcut between them."
+                    "content"     : "On the second floor, there are three main attractions -- two hallways and the Infinity Pool -- and a small spinning cube as a decoration and distraction. The cube uses Unity stencil buffers to show a different shape from each face, and it spins to give users a fixed frame of reference in the second floor. There are two pairs of doors on the second floor, each connected by a hallway. The hallway for the pair that are close together is much longer than the apparent distance between the doors, and the hallay between the doors that are far apart is actually a shortcut between them."
                 },
                 {
                     "type"        : "image",
