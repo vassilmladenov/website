@@ -38,7 +38,7 @@
                 },
                 {
                     "type"        : "paragraph",
-                    "content"     : "You can check out my project as a <a href='http://google.com/'>unityPackage</a> file or as a <a href='http://google.com/'>Windows binary</a>. This demo was developed at the University of Illinois Siebel Center's virtual reality lab on machines with NVIDIA GeForce GTX Titan Black cards and tested with the Oculus Rift DK2. Many thanks to Alan Zucconi for his stencil buffer <a href='http://www.alanzucconi.com/2015/12/09/3873/'>example</a> and to <a href='http://msl.cs.uiuc.edu/~yershova/'>Prof. Anna Yershova</a> for leading the <a href='https://courses.engr.illinois.edu/cs498sl/'>class</a>."
+                    "content"     : "You can check out my project as a <a href='assets/Warp.unitypackage'>unityPackage</a> file or as a <a href='assets/Warp.zip'>Windows binary</a>. This demo was developed at the University of Illinois Siebel Center's virtual reality lab on machines with NVIDIA GeForce GTX Titan Black cards and tested with the Oculus Rift DK2. Many thanks to Alan Zucconi for his stencil buffer <a href='http://www.alanzucconi.com/2015/12/09/3873/'>example</a> and to <a href='http://msl.cs.uiuc.edu/~yershova/'>Prof. Anna Yershova</a> for leading the <a href='https://courses.engr.illinois.edu/cs498sl/'>class</a>."
                 }
             ]
         },
