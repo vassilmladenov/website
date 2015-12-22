@@ -65,6 +65,6 @@ body {
   background-color: #f5f5f5;
 }
 
-.details-text > img {
+.details-text > img, div {
   margin-bottom: 15px;
 }

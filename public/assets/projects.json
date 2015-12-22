@@ -1,6 +1,48 @@
 [
     [
         {
+            "title"       : "Warp",
+            "abstract"    : "CS 498 Virtual Reality final project. Warp provides the experience a non-Euclidean world to break down our preconceptions of 3D space.",
+            "details" : [
+                {
+                    "type"        : "paragraph",
+                    "content"     : "Imagine going upstairs from the second floor of your building to the first floor. Imagine a hallway that takes longer to walk around than it does to walk through. Imagine a room that traps you on its ceiling when you attempt to leave through a door that isn't the entrance. This is Warp."
+                },
+                {
+                    "type"        : "youtube",
+                    "content"     : "https://www.youtube.com/embed/6NSotm7Ei64?rel=0"
+                },
+                {
+                    "type"        : "paragraph",
+                    "content"     : "Placeholder."
+                },
+                {
+                    "type"        : "image",
+                    "content"     : "assets/level2.png"
+                },
+                {
+                    "type"        : "paragraph",
+                    "content"     : "Placeholder."
+                },
+                {
+                    "type"        : "image",
+                    "content"     : "assets/infpool.png"
+                },
+                {
+                    "type"        : "paragraph",
+                    "content"     : "Placeholder."
+                },
+                {
+                    "type"        : "image",
+                    "content"     : "assets/debug.png"
+                },
+                {
+                    "type"        : "paragraph",
+                    "content"     : "You can check out my project as a <a href='http://google.com/'>unityPackage</a> file or as a <a href='http://google.com/'>Windows binary</a>. This demo was developed at the University of Illinois Siebel Center's virtual reality lab on machines with NVIDIA GeForce GTX Titan Black cards and tested with the Oculus Rift DK2. Many thanks to Alan Zucconi for his stencil buffer <a href='http://www.alanzucconi.com/2015/12/09/3873/'>example</a> and to <a href='http://msl.cs.uiuc.edu/~yershova/'>Prof. Anna Yershova</a> for leading the <a href='https://courses.engr.illinois.edu/cs498sl/'>class</a>."
+                }
+            ]
+        },
+        {
             "title"       : "Arduino LED Music",
             "abstract"    : "An array of RGB LED lights driven by an Arduino. The lights respond to music through FFT on an electret microphone source or an AirPlay stream from a Raspberry Pi.",
             "details" : [
@@ -10,45 +52,33 @@
                 },
                 {
                     "type"        : "paragraph",
-                    "content"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                }
-            ]
-        },
-        {
-            "title"       : "MeetU",
-            "abstract"    : "CS 411 (databases) final project.",
-            "details" : [
-                {
-                    "image"       : "",
-                    "paragraph"   : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "content"     : "Placeholder text."
                 }
             ]
         }
     ],
     [
         {
+            "title"       : "MeetU",
+            "abstract"    : "CS 411 (databases) final project.",
+            "details" : [
+                {
+                    "type"        : "paragraph",
+                    "content"     : "Placeholder text."
+                }
+            ]
+        }, 
+        {
             "title"       : "HyperSnake",
             "abstract"    : "A four-dimensional version of the classic Snake game. Players interact with the three-dimensional shadow of the wireframe tesseract that contains the game.",
             "details" : [
                 {
                     "type"        : "paragraph",
-                    "content"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "content"     : "Placeholder text."
                 },
                 {
                     "type"        : "image",
                     "content"     : "assets/hypersnake.png"
-                },
-                {
-                    "type"        : "paragraph",
-                    "content"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                },
-                {
-                    "type"        : "paragraph",
-                    "content"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                },
-                {
-                    "type"        : "paragraph",
-                    "content"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempois aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 }
             ]
         }

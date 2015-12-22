@@ -1,6 +1,17 @@
 // create the module and name it website
     // also include ngRoute for all our routing needs
 var website = angular.module('website', ['ngRoute']);
+website.filter('trustThisUrl', ['$sce', function($sce) {
+    return function(val) {
+        return $sce.trustAsResourceUrl(val);
+    };
+}]);
+website.filter('sanitize', ['$sce', function($sce) {
+  return function(htmlCode){
+    return $sce.trustAsHtml(htmlCode);
+  }
+}]);
+
 
 // configure our routes
 website.config(function($routeProvider) {
@@ -49,3 +60,4 @@ website.controller('detailsController', function($scope, $routeParams, $http) {
         console.log("projects", $scope.project)
     })
 });
+
