@@ -14,7 +14,11 @@
                 },
                 {
                     "type"        : "paragraph",
-                    "content"     : "Placeholder."
+                    "content"     : "The goal of Warp was to allow a player to experience a world that challenged fundamental concepts of space that have been trained and reinforced since birth. My colleague David Prorok and I set out to architect a building in Unity that appears geometrically inconsistent as a user walks through its hallways. When the experience is coupled with virtual reality, the paths become fully immersive and the construction is challenging to resolve with a user's existing concepts of architecture."
+                },
+                {
+                    "type"        : "paragraph",
+                    "content"     : "The game begins by placing a user in a room with two boxes and no apparent means of exit. Behind the player is a mirror that shows a door on the opposite wall. Once the player sees the door in the mirror, the door appears in the main room, and the player can access the staircase. The staircase leads to the second floor, but it is also a closed loop. Going upstairs from the second floor leads back to the first floor, and going downstairs from the first floor takes the player to the second floor. In our tests, understanding and accepting the reality of the staircase was an important step towards accepting the gemoetric properties of the rest of Warp."
                 },
                 {
                     "type"        : "image",
@@ -22,7 +26,7 @@
                 },
                 {
                     "type"        : "paragraph",
-                    "content"     : "Placeholder."
+                    "content"     : "On the second floor, there are three main attractions -- two hallways and the Infinity Pool -- and a small spinning cube as a decoration and distraction. The cube uses Unity stencil buffers to show a different shape from each face, and it spins to give users a fixed frame of reference in the second floor. There are two pairs doors on the second floor, each connected by a hallway. The hallway for the pair that are close together is much longer than the apparent distance between the doors, and the hallay between the doors that are far apart is actually a shortcut between them."
                 },
                 {
                     "type"        : "image",
@@ -30,12 +34,17 @@
                 },
                 {
                     "type"        : "paragraph",
-                    "content"     : "Placeholder."
+                    "content"     : "The Infinity Pool is a room that is infinite to the left and to the right. There is a spinning cube at the entrance to mark the main room. When entering the adjacent room, the player is placed on the ceiling of the previous room. This is confirmed by looking up and seeing the cube and the exit door on the ceiling. The player can choose either door to return to the main room of the second floor."
                 },
                 {
                     "type"        : "image",
                     "content"     : "img/debug.png"
                 },
+                {
+                    "type"        : "paragraph",
+                    "content"     : "If you've ever seen the movie Interstellar, then recall the tesseract construction towards the end of the film. The tesseract contained infinite versions of the same room, with the slightest variation in each. The variations were subject to a dimension higher than the 3D Euclidean representation of the room itself. To accomplish our hallway effect, we actually cloned the second floor 4 times, once for each door, and stacked them vertically in the <i>y</i> direction. This allowed us to transparently move the player from room to clone and back while preserving their momentum in the <i>x</i> and <i>z</i> directions. The spinning cube also acts as a fixed frame of reference in each room so that players don't realize that they have teleported. Finally, for the Infinity Pool, we again cloned the pool and synchronized the spinning of the cubes, but we also had to offset the adjacent rooms at integer lengths to avoid an illusion-breaking jitter during teleportation. The architecture itself is not infinite -- there are simply enough clones in each direction so that linear perspective and vanishing points fill in the rest of the illusion."
+                },
+
                 {
                     "type"        : "paragraph",
                     "content"     : "You can check out my project as a <a href='binary/Warp.unitypackage'>unityPackage</a> file or as a <a href='binary/Warp.zip'>Windows binary</a>. This demo was developed at the University of Illinois Siebel Center's virtual reality lab on machines with NVIDIA GeForce GTX Titan Black cards and tested with the Oculus Rift DK2. Many thanks to Alan Zucconi for his stencil buffer <a href='http://www.alanzucconi.com/2015/12/09/3873/'>example</a> and to <a href='http://msl.cs.uiuc.edu/~yershova/'>Prof. Anna Yershova</a> for leading the <a href='https://courses.engr.illinois.edu/cs498sl/'>class</a>."
