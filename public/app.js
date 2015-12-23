@@ -11,7 +11,7 @@ function ProjectsController($scope, projects) {
 
 function DetailsController($scope, $routeParams, projects) {
     projects.getProjects().then(function (result) {
-        $scope.project = result[$routeParams.row][$routeParams.col];
+        $scope.project = result[$routeParams.id];
     });   
 }
 
@@ -28,7 +28,7 @@ function Router($routeProvider) {
             controller  : 'projectsController',
             activetab   : 'projects'
         })
-        .when('/projects/:row/:col', {
+        .when('/projects/:id', {
             templateUrl : 'views/details.html',
             controller  : 'detailsController',
             activetab   : undefined

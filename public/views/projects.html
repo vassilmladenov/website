@@ -1,7 +1,7 @@
-<div ng-repeat="(row, projectRow) in projects" class="details-text row">
-    <div ng-repeat="(col, project) in projectRow" class="col-sm-6 text-center">
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.abstract }}</p>
-        <a class="btn btn-default" href="#projects/{{row}}/{{col}}" role="button">See more »</a>
+<div ng-repeat="project in projects" ng-if="$even" class="details-text row">
+    <div ng-repeat="id in [$index, $index+1]" ng-if="id < projects.length" class="col-sm-6 text-center">
+        <h2>{{ projects[id].title }}</h2>
+        <p>{{ projects[id].abstract }}</p>
+        <a class="btn btn-default" href="#/projects/{{id}}" role="button">See more »</a>
     </div>
 </div>
