@@ -73,3 +73,7 @@ body {
 .details-text > img, div {
   margin-bottom: 15px;
 }
+
+.home-text {
+  font-size: 12pt;
+}
