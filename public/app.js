@@ -1,63 +1,77 @@
-// create the module and name it website
-    // also include ngRoute for all our routing needs
-var website = angular.module('website', ['ngRoute']);
-website.filter('trustThisUrl', ['$sce', function($sce) {
-    return function(val) {
-        return $sce.trustAsResourceUrl(val);
-    };
-}]);
-website.filter('sanitize', ['$sce', function($sce) {
-  return function(htmlCode){
-    return $sce.trustAsHtml(htmlCode);
-  }
-}]);
+// controllers
+function MainController($scope) {
+    $scope.email = 'vmladenov [at] icloud [dot] com';
+}
 
+function ProjectsController($scope, projects) {
+    projects.getProjects().then(function (result) {
+        $scope.projects = result;
+    })
+}
 
-// configure our routes
-website.config(function($routeProvider) {
+function DetailsController($scope, $routeParams, projects) {
+    projects.getProjects().then(function (result) {
+        $scope.project = result[$routeParams.row][$routeParams.col];
+    });   
+}
+
+// set routes for app
+function Router($routeProvider) {
     $routeProvider
-
-        // route for the home page
         .when('/', {
             templateUrl : 'views/home.html',
             controller  : 'mainController',
             activetab   : 'home'
         })
-
-        // route for the about page
         .when('/projects', {
             templateUrl : 'views/projects.html',
             controller  : 'projectsController',
             activetab   : 'projects'
         })
-
         .when('/projects/:row/:col', {
             templateUrl : 'views/details.html',
             controller  : 'detailsController',
             activetab   : undefined
-        })
+        });
+}
 
-        // route for the contact page
-});
+// projects service, single ajax call
+function Projects($http) {
+    this.projects = null;
+    function populate() {
+        return $http.get("assets/projects.json").then(function (response) {
+            return response.data;
+        });
+    }
 
-// create the controller and inject Angular's $scope
-website.controller('mainController', function($scope, $route) {
-    $scope.$route = $route;
-    $scope.email = 'vmladenov [at] icloud [dot] com';
-});
+    this.getProjects = function(update) {
+        if (update || this.projects === null) {
+            this.projects = populate();
+        }
 
-website.controller('projectsController', function($scope, $route, $http) {
-    $scope.$route = $route;
-    $http.get("assets/projects.json").then(function (result) {
-        $scope.projects = result.data;
-        console.log("projects", result.data)
-    })
-});
+        return this.projects;
+    }
+}
 
-website.controller('detailsController', function($scope, $routeParams, $http) {
-    $http.get("assets/projects.json").then(function (result) {
-        $scope.project = result.data[$routeParams.row][$routeParams.col];
-        console.log("projects", $scope.project)
-    })
-});
+angular.module('website', ['ngRoute'])
+    .controller('mainController', MainController)
+    .controller('projectsController', ProjectsController)
+    .controller('detailsController', DetailsController)
+    .service('projects', Projects)
+    .filter('trustThisUrl', function($sce) {
+        return function(val) {
+            return $sce.trustAsResourceUrl(val);
+        };
+    }).filter('sanitize', function($sce) {
+        return function(htmlCode){
+            return $sce.trustAsHtml(htmlCode);
+        }
+    }).config(Router);
+
+
+
+
+
+
+
 
