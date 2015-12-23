@@ -87,19 +87,5 @@
                 "content"     : "img/hypersnake.png"
             }
         ]
-    },
-    {
-        "title"       : "Test",
-        "abstract"    : "A four-dimensional version of the classic Snake game. Players interact with the three-dimensional shadow of the wireframe tesseract that contains the game.",
-        "details" : [
-            {
-                "type"        : "paragraph",
-                "content"     : "Placeholder text."
-            },
-            {
-                "type"        : "image",
-                "content"     : "img/hypersnake.png"
-            }
-        ]
     }
 ]
