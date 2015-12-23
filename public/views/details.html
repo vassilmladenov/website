@@ -1,8 +1,8 @@
-<div>
+<div class="details-text">
     <div class="row">
     <h2 class="text-center">{{ project.title }}</h2>
     </div>
-    <div ng-repeat="pair in project.details" class="details-text row">
+    <div ng-repeat="pair in project.details" class="row">
         <p ng-if="pair.type === 'paragraph'" ng-bind-html="pair.content | sanitize"></p>
         <img ng-if="pair.type === 'image'" ng-src="{{ pair.content }}" class="center-block img-responsive">
         <div ng-if="pair.type === 'youtube'" class="embed-responsive embed-responsive-16by9">
