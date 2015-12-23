@@ -1,12 +1,15 @@
 // controllers
-function MainController($scope) {
+// route dependency necessary for activetab
+function MainController($scope, $route) {
+    $scope.$route = $route;
     $scope.email = 'vmladenov [at] icloud [dot] com';
 }
 
-function ProjectsController($scope, projects) {
+function ProjectsController($scope, $route, projects) {
+    $scope.$route = $route;
     projects.getProjects().then(function (result) {
         $scope.projects = result;
-    })
+    });
 }
 
 function DetailsController($scope, $routeParams, projects) {
