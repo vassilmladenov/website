@@ -42,10 +42,18 @@
   }
 }
 
-body, h1 {
+nav, h1, h2 {
     font-family: 'Roboto Mono';
 }
 
+nav, footer > div > p {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 13pt;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -65,15 +73,15 @@ body {
   background-color: #f5f5f5;
 }
 
-.details-text {
-  font-family: 'Open Sans';
-  font-size: 13pt;
+.page-header {
+  margin: 20px 0 3px;
 }
 
-.details-text > img, div {
-  margin-bottom: 15px;
+.navbar {
+  margin-bottom: 10px;
 }
 
-.home-text {
-  font-size: 12pt;
+.details-text > img, .details-text > div {
+  margin-bottom: 10px;
 }
+
